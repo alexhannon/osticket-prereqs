@@ -43,15 +43,34 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/d7a08965-67a8-48bb-8227-d2251d812281)
+
+  ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/5bf52089-5096-48ac-845e-78711d501e3c)
+
+  ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/5f511f06-ea3b-42a1-9726-19434068f1da)
+
+
 
 
 
 </p>
 <p>
-4. After this, you will want to install and enable ISS in Windows with CGI and Common HTTP Features
+4. After this, you will want to install and enable ISS in Windows with CGI and enable all boxes in Common HTTP Features
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/30da0cba-bbe9-453d-bc06-6f178f96ccfc)
+
 </p>
 <br />
+5. From the Installation Files, Download and Install PHP manager for IIS.
+</p>
+6. From the Installtion Files , download and Install the Rewrite Module.
+</p>
+7. Create a Folder in the C drive and name it PHP
+</p>
+8. From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
+</p>
+9. Once you are done with extracting the PHP file in the C drive, download and install the VC_redist.x86exe file.
+</p>
+10. 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
