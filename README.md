@@ -111,18 +111,40 @@ Then hit Execute to start configuration.
 
 Reload IIS again.
 
-14.) On IIS go to sites -> Default -> osTicket -On the right, click “Browse *:80”
+18. On IIS click on Sites --> Default --> osTicket. On the right side, hit “Browse *:80”.
 
-</p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/d1abaa11-5f86-4926-baba-09a841bf3524)
+
+19. This will pop up. Some extentions are not enabled.
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/a433e556-7f65-4250-893a-e6a40aaf5b7a)
+
+20. Go back to IIS, sites --> Default --> osTicket
+21. Double-click PHP Manager
+22. Click "Enable or disable an extension"
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/2df3e028-cc93-463c-9a3b-61b68b73490a)
+
+    - Enable: php_imap.dll
+</p>    
+    - Enable: php_intl.dll
+</p>    
+    - Enable: php_opcache.dll
+24. Refresh osTicket site in the browser
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/d11472cb-25e5-46f8-99fd-bd591047a8bb)
+
+25. After this,  rename one of the files in our osTicket folder. Go into the file explorer and search for C;\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/0fe27ac4-0413-4099-9e20-b4ab1044dd9d)
+
+Rename the ost-sampleconfig.php to ost-config.php
+
+26. Assign Permissions: ost-config.php
+    - Disable inheritance --> Remove All
+   
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/9e79e598-bbd1-45d0-b6ef-d3966abd337b)
+
+    - New Permissions --> Everyone --> All
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/39484e70-2229-4a83-afb6-3c8d75829634)
