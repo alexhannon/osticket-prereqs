@@ -148,3 +148,12 @@ Rename the ost-sampleconfig.php to ost-config.php
     - New Permissions --> Everyone --> All
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/39484e70-2229-4a83-afb6-3c8d75829634)
+
+27. From the Installation Files, download and install HeidiSQL. Finish setting up osticket in the browser. From there everything should be set up.
+28. To clean up, all you have to do is delete the setup file in C:\inetpub\wwwroot\osTicket. Once you do that, go into the "include" file in C:\inetpub\wwwroot\osTicket. From there you are going to change the permissions of the ost-config.php file to "Read" only.
+
+![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/36bf24a2-c52e-4795-b8fc-576c87bbbe42)
+
+Notes:
+  - The help desk login page URL will be HTTP://localhost.osTicket/scp/login.php .
+  - The End Users osTicket URL will be: HTTP://localhost/osTicket .
