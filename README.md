@@ -29,16 +29,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p>
-1. First, you will want to create a virtual machine using Azure. To do this go to https://portal.azure.com/. Set up the virtual machine with Windows 10 Pro.
+First, you will want to create a virtual machine using Azure. To do this go to https://portal.azure.com/. Set up the virtual machine with Windows 10 Pro.
 
-2. Once created, connect to the virtual machine via Remote Desktop Connection. You will connect the virtual machine by putting its public IP address in.
+Once created, connect to the virtual machine via Remote Desktop Connection. You will connect the virtual machine by putting its public IP address in.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/c1c0c7f3-0405-475e-9f00-fc3e3dcbc37d)
 
 
 </p>
 <p>
-3. Once connected, go to your control panel. From there, open up programs and select Turn Windows features on and off.
+Once connected, go to your control panel. From there, open up programs and select Turn Windows features on and off.
 </p>
 <br />
 
@@ -54,23 +54,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-4. After this, you will want to install and enable ISS in Windows with CGI and enable all boxes in Common HTTP Features
+After this, you will want to install and enable ISS in Windows with CGI and enable all boxes in Common HTTP Features
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/30da0cba-bbe9-453d-bc06-6f178f96ccfc)
 
 </p>
 <br />
-5. From the Installation Files, Download and Install PHP manager for IIS.
+From the Installation Files, Download and Install PHP manager for IIS.
 </p>
-6. From the Installtion Files , download and Install the Rewrite Module.
+From the Installtion Files , download and Install the Rewrite Module.
 </p>
-7. Create a Folder in the C drive and name it PHP
+Create a Folder in the C drive and name it PHP
 </p>
-8. From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
+From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
 </p>
-9. Once you are done with extracting the PHP file in the C drive, download and install the VC_redist.x86exe file.
+Once you are done with extracting the PHP file in the C drive, download and install the VC_redist.x86exe file.
 </p>
-10. From the Installation Files, Download and Install MySQL 5.5.62
+From the Installation Files, Download and Install MySQL 5.5.62
   - Typical Setup -->
 </p>
   - Launch Configuration Wizard (after install) -->
@@ -88,40 +88,44 @@ Then hit Execute to start configuration.
 
 </p>
 <p>
-11. You will want to open IIS as an Admin. Type IIS in the Windows search browser and it should pop up.
+You will want to open IIS as an Admin. Type IIS in the Windows search browser and it should pop up.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/b63128b2-4a8b-47c5-9363-0ced98e70a49)
 
-12. Click on PHP Manager
+Click on PHP Manager
 </p>
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/5aed8ccd-22b7-40a6-bb20-07ba86ebc314)
   
-13. Register new PHP version
+Register new PHP version
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/6c925f74-1249-4668-8092-2e788365999d)
 
-14.  Go back into your C Drive --> PHP --> click on php-cgi file.
+Go back into your C Drive --> PHP --> click on php-cgi file.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/14aea22c-eb9f-4cd4-a5a7-4c55763763d0)
 
-15. Install and download os Ticket v1.15.8
-16. Extract and Copy "Upload" folder to c:\inetpub\wwwroot
-17. Within c:\inetpub\wwwroot, Rename "upload" to "OsTicket"
+Install and download os Ticket v1.15.8
+
+Extract and Copy "Upload" folder to c:\inetpub\wwwroot
+
+Within c:\inetpub\wwwroot, Rename "upload" to "OsTicket"
 
 Reload IIS again.
 
-18. On IIS click on Sites --> Default --> osTicket. On the right side, hit “Browse *:80”.
+On IIS click on Sites --> Default --> osTicket. On the right side, hit “Browse *:80”.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/d1abaa11-5f86-4926-baba-09a841bf3524)
 
-19. This will pop up. Some extentions are not enabled.
+This will pop up. Some extentions are not enabled.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/a433e556-7f65-4250-893a-e6a40aaf5b7a)
 
-20. Go back to IIS, sites --> Default --> osTicket
-21. Double-click PHP Manager
-22. Click "Enable or disable an extension"
+Go back to IIS, sites --> Default --> osTicket
+
+Double-click PHP Manager
+
+Click "Enable or disable an extension"
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/2df3e028-cc93-463c-9a3b-61b68b73490a)
 
@@ -130,17 +134,17 @@ Reload IIS again.
     - Enable: php_intl.dll
 </p>    
     - Enable: php_opcache.dll
-24. Refresh osTicket site in the browser
+Refresh osTicket site in the browser
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/d11472cb-25e5-46f8-99fd-bd591047a8bb)
 
-25. After this,  rename one of the files in our osTicket folder. Go into the file explorer and search for C;\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+After this,  rename one of the files in our osTicket folder. Go into the file explorer and search for C;\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/0fe27ac4-0413-4099-9e20-b4ab1044dd9d)
 
 Rename the ost-sampleconfig.php to ost-config.php
 
-26. Assign Permissions: ost-config.php
+Assign Permissions: ost-config.php
     - Disable inheritance --> Remove All
    
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/9e79e598-bbd1-45d0-b6ef-d3966abd337b)
@@ -149,8 +153,9 @@ Rename the ost-sampleconfig.php to ost-config.php
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/39484e70-2229-4a83-afb6-3c8d75829634)
 
-27. From the Installation Files, download and install HeidiSQL. Finish setting up osticket in the browser. From there everything should be set up.
-28. To clean up, all you have to do is delete the setup file in C:\inetpub\wwwroot\osTicket. Once you do that, go into the "include" file in C:\inetpub\wwwroot\osTicket. From there you are going to change the permissions of the ost-config.php file to "Read" only.
+From the Installation Files, download and install HeidiSQL. Finish setting up osticket in the browser. From there everything should be set up.
+
+To clean up, all you have to do is delete the setup file in C:\inetpub\wwwroot\osTicket. Once you do that, go into the "include" file in C:\inetpub\wwwroot\osTicket. From there you are going to change the permissions of the ost-config.php file to "Read" only.
 
 ![image](https://github.com/alexhannon/osticket-prereqs/assets/168659572/36bf24a2-c52e-4795-b8fc-576c87bbbe42)
 
